@@ -1,0 +1,144 @@
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Toggle Styles */
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+.navlogo.toggled {
+    width: 75px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+#sidebar-wrapper {
+    z-index: 1001;
+    position: fixed;
+    left: 200px;
+    width: 155px;
+    height: 100%;
+    margin-left: -200px;
+    overflow-y: auto;
+    background: #2980b9;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#sidebar-wrapper.toggled {
+    background-color: transparent;
+    left: 200px;
+    width: 125px;
+}
+#wrapper.toggled #sidebar-wrapper {
+    width: 155px;
+}
+.sidebar-brand.toggled{
+    padding-left: -15;
+    text-align: right;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 155px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+}
+.sidebar-nav li a{
+    color: #fff;
+}
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #bebebe;
+    background: rgba(255,255,255,0.1);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: relative;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+.sidebar-nav.toggled{
+    width: 100px;
+    left: 0;
+}
+.opciont.toggled{
+    display: none;
+}
+    #wrapper {
+        padding-left: 150px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 155px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 155px;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+    }

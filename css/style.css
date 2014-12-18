@@ -1,0 +1,69 @@
+@font-face {
+    font-family: "BebasNeueBold";
+    src: url("../fonts/BebasNeueBold.ttf");
+}
+#shadow {
+    width: 0; 
+	height: 100%; 
+	border-top: 25em solid transparent;
+	border-bottom: 25em solid transparent;
+	
+	border-left: 0em solid #36362d;
+}
+.paddingleft {
+    padding-left: 0;   
+}
+#butonColapse {
+    cursor: pointer;
+    background-color: #babfba;
+    width: 40px;
+    height: 35px;
+}
+#shadow.despliegue {
+     -webkit-animation-name: swing; 
+    animation-name: swing;    
+}
+.enable {
+    display: block;
+    
+}
+.disable {
+    display: none;
+}
+/*animation*/
+.animated { 
+    -webkit-animation-duration: 1s; 
+    animation-duration: 1s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+    -webkit-animation-timing-function: ease-in-out; 
+    animation-timing-function: ease-in-out; 
+}
+@-webkit-keyframes swing { 
+    0% {
+        border-left: 0em solid #36362d;
+          
+    }
+    80% {
+         border-left: 35em solid #36362d; 
+    }
+    100% {
+        border-top: 0em solid transparent;
+	    border-bottom: 50em solid transparent;
+	    border-left: 35em solid #36362d; 
+    }
+    
+} 
+@keyframes swing { 
+     0% {
+         border-left: 0em solid #36362d; 
+    }
+    80% {
+        border-left: 35em solid #36362d;  
+    }
+    100% {
+        border-top: 0em solid transparent;
+	    border-bottom: 50em solid transparent;
+	    border-left: 35em solid #36362d; 
+    }
+} 
