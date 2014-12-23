@@ -15,13 +15,23 @@
 }
 #butonColapse {
     cursor: pointer;
-    background-color: #babfba;
-    width: 40px;
-    height: 35px;
+    background-color: #36362d;
+    width: 50px;
+    height: 45px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 5px;
+}
+#labelInfo {
+    color: white;
+    margin: 15%; 
 }
 #shadow.despliegue {
      -webkit-animation-name: swing; 
     animation-name: swing;    
+}
+#shadow.undespliegue {
+     -webkit-animation-name: unswing; 
+    animation-name: unswing;    
 }
 .enable {
     display: block;
@@ -57,7 +67,7 @@
     
 } 
 @keyframes swing { 
-     0% {
+    0% {
         border-left: 0em solid #36362d;
           
     }
@@ -70,5 +80,37 @@
         border-top: 0em solid transparent;
         border-bottom: 50em solid transparent;
         border-left: 35em solid #36362d;
+    }
+} 
+
+@-webkit-keyframes unswing { 
+    0% {
+        border-top: 0em solid transparent;
+        border-bottom: 50em solid transparent;
+        border-left: 35em solid #36362d;  
+    }
+    60% {
+        border-top: 0em solid transparent;
+        border-bottom: 25em solid transparent;
+        border-left: 0em solid #36362d;
+    }
+    100% {
+        border-left: 0em solid #36362d;
+    }
+    
+} 
+@keyframes unswing { 
+   0% {
+        border-top: 0em solid transparent;
+        border-bottom: 50em solid transparent;
+        border-left: 35em solid #36362d;  
+    }
+    60% {
+        border-top: 0em solid transparent;
+        border-bottom: 25em solid transparent;
+        border-left: 0em solid #36362d;
+    }
+    100% {
+        border-left: 0em solid #36362d;
     }
 } 
